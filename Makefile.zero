@@ -8,7 +8,7 @@ include ./Rules.mk
 
 all:	redbaronMake hyperoidMake vecxMake1 vecxMake2 vecxMake3 vecxMake4 vecxMake5 vecxMake6 gyrocksMake battlezoneMake \
 	gravitarMake spaceduelMake tempestMake blackwidowMake deluxeMake astMake lunarMake CineMake zblastMake \
-	helloWorldMake aaeMake asteroidsMake tailgunnerMake eliteMake basicMake wwviMake swMake bz2Make rebelMake voomMake
+	helloWorldMake aaeMake tailgunnerMake eliteMake basicMake wwviMake swMake bz2Make rebelMake voomMake
 	
 voomMake: 
 	cd voom; $(MAKE) all BUILD_FOR=$(BUILD_FOR)

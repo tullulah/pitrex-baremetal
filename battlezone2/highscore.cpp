@@ -52,16 +52,16 @@ highscore::highscore(void)
 {
 	char* names[10] = 
 	{
-		{ (char*)"EDR" },
-		{ (char*)"MPH" },
-		{ (char*)"JED" },
-		{ (char*)"DES" },
-		{ (char*)"TKE" },
-		{ (char*)"VKB" },
-		{ (char*)"EL " },
-		{ (char*)"HAD" },
-		{ (char*)"ORR" },
-		{ (char*)"GJR" }
+		 (char*)"EDR" ,
+		 (char*)"MPH" ,
+		 (char*)"JED" ,
+		 (char*)"DES" ,
+		 (char*)"TKE" ,
+		 (char*)"VKB" ,
+		 (char*)"EL " ,
+		 (char*)"HAD" ,
+		 (char*)"ORR" ,
+		 (char*)"GJR" ,
     };
 
 	int scores[10] =

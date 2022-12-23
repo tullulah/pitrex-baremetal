@@ -21,7 +21,7 @@ BUILD_DIR := $(BUILD_DIR_PURE)/
 LIB_DIR := $(BASE_DIR)/pitrex/lib7
 IMG_DIR := piZero2
 
-CFLAGS := -fuse-ld=bfd -Ofast -I$(INC_DIR_PITREX)  -I$(INC_DIR_USPI) -L$(LIB_DIR) \
+CFLAGS := -std=c++17 -fuse-ld=bfd -Ofast -I$(INC_DIR_PITREX)  -I$(INC_DIR_USPI) -L$(LIB_DIR) \
 	-mhard-float -mfloat-abi=hard -mfpu=neon-fp-armv8 -march=armv8-a -mtune=cortex-a53 \
 	-ffreestanding -nostartfiles -DPITREX_DEBUG -DRASPPI=3 
 else
@@ -45,6 +45,7 @@ LIBSGCC := -lvectrexInterface -luspi -lm -lsupc++ $(LIB_DIR)/linkerHeapDefBoot.l
 CPP	= arm-none-eabi-g++
 CC	= arm-none-eabi-gcc
 GCC	= gcc
+
 AS	= $(CC)
 LD	= arm-none-eabi-ld
 AR	= arm-none-eabi-ar

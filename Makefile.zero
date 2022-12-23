@@ -6,7 +6,7 @@ BASE_DIR = .
 include ./Rules.mk
 
 
-all:	redbaronMake hyperoidMake vecxMake1 vecxMake2 vecxMake3 vecxMake4 vecxMake5 vecxMake6 gyrocksMake battlezoneMake \
+all: stella	redbaronMake hyperoidMake vecxMake1 vecxMake2 vecxMake3 vecxMake4 vecxMake5 vecxMake6 gyrocksMake battlezoneMake \
 	gravitarMake spaceduelMake tempestMake blackwidowMake deluxeMake astMake lunarMake CineMake zblastMake \
 	helloWorldMake aaeMake tailgunnerMake eliteMake basicMake wwviMake swMake bz2Make rebelMake voomMake
 	
@@ -128,6 +128,10 @@ swMake:
 
 bz2Make:
 	cd battlezone2; $(MAKE) all BUILD_FOR=$(BUILD_FOR)
+	cd ..
+
+stella:
+	cd stella\src; $(MAKE) all BUILD_FOR=$(BUILD_FOR)
 	cd ..
 	
 clean::
